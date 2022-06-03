@@ -1,9 +1,9 @@
 Credits: Mostly created by Aprillomat
 
-# What this is
+# What This Is
 We organised a Hollow Knight Tourney livestreamed on the HollowKnightCommunity twitch channel and created UI for Viewers, Restreamer and Runner. The Category ran was SBRCO, which is Salubra's Blessing Random Charm Order, or in other words, the Runner has to collect all Charms in a given Random Order.
 
-# How to run
+# How To Run
 You'll need to have Python 3.6+ installed
 
 # UI
