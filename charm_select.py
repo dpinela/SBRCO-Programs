@@ -1,5 +1,5 @@
 """GUI to display and randomize charm orders, as well as create livesplit files.
-uses SBRCO_logic_parser for charm logic"""
+uses SBRCO_logic_parser for charm logic within generate_charmlist"""
 
 import tkinter as tk
 from Resources.res import charms_splits, charms_autosplits

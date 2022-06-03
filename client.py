@@ -151,7 +151,7 @@ def convert_vars_to_bytes(srv_vars: list) -> bytes:
 def livesplit_setup(ls_vars: list, killswitch=None):  # [player_index, split_index, ls_sock, charmsEquipped]
     print("Running Livesplit setup, trying to connect to Livesplit server")
 
-    # Try to connect with Livesplit
+    # Read from Text File created by my own Modified Assembly-Csharp
     while(True):
         try:
             with open(tempfile.gettempdir() + "/charms.txt") as f:
@@ -168,6 +168,7 @@ def livesplit_setup(ls_vars: list, killswitch=None):  # [player_index, split_ind
             print("Couldn't open file, make sure you started Hollow Knight first")
             time.sleep(1)
 
+    # Alternatively, use Livesplit server and read the charm Index from livesplit:
     # while True:
         # if killswitch and killswitch[0]:
         #     print("livesplit thread received kill signal, terminating...")
