@@ -1,0 +1,27 @@
+kingsoul: dreamwielder + (!lateKS || easy + 21- || medium + 11- || hard) + (!fastPalace || dashmaster + sharpshadow)
+
+grubberflyselegy: grubsong + (!lateElegy || easy + 21- || medium + 11- || hard) + (!grubLegy || souleater + spelltwister + baldurshell + sporeshroom + hiveblood + weaversong) + (!comfLegy || shamanstone + spelltwister || shamanstone + flukenest || spelltwister + flukenest)
+
+lifebloodcore: (hard || medium + jonisblessing || easy + jonisblessing + (fragileheart + dreamwielder || fragileheart + lifebloodheart || dreamwielder + lifebloodheart)) + (!lateLBC || 11-)
+
+shamanstone: !earlyShaman || easy + -10 || medium + -20 || hard + -30
+
+dreamwielder: !earlyDW || -25
+
+dashmaster: !earlyDM || easy + -10 || medium + -15 || hard + -20
+
+grubsong: !midGrubsong || 8-25
+
+hiveblood: !lateHB || easy + 21- || medium + 16- || hard + 11-
+
+spelltwister: !earlyTwister || easy + -10 || medium + -15 || hard + -20
+
+flukenest: (!earlyFlukes || easy + -10 || medium + -15 || hard + -20) + (!diveTwister || spelltwister)
+
+quickslash: !diveTwister || spelltwister
+
+souleater: !diveTwister || spelltwister
+
+nailmastersglory: (!earlyNMG || easy + 7-20 || medium + 5-15 || hard + -7) + (!QSlockNMG || quickslash)
+
+sharpshadow: !lateSS || easy + 11- || medium + 6- || hard

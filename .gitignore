@@ -1,0 +1,10 @@
+build/
+#__pycache__/
+.idea/
+dist/
+#rest/__pyache__/
+*.zip
+*.spec
+*.exe
+*__pycache__/
+*keys.py
