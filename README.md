@@ -7,7 +7,7 @@ We organised a Hollow Knight Tourney livestreamed on the HollowKnightCommunity t
 ### Generate Charm List
 When running charm_select.py, this UI appears:  
 ![screenshot](https://i.imgur.com/NuBb43O.png)  
-The user can change the logic parameters defined by Resources/config/logic.txt to their liking and generate a random charm order (created by generate_charmlist.py). Afterwards they can click on Generate lss which generates an Autosplitter file. The List is encoded in a b64 string which can be used to generate the charmList by clicking on the Radiobutton and then Generate Charm Order.
+The user can change the logic parameters defined by Resources/config/logic.txt to their liking and generate a random charm order (created by generate_charmlist.py). Afterwards they can click on Generate lss which generates an Autosplitter file. The List is encoded in a b64 string which can be used to generate the charmList by clicking on the Radiobutton and then Generate Charm Order
 ### Runner
 When running runner.py, this UI appears:  
 ![screenshot](https://i.imgur.com/lA9qs7t.png)  
