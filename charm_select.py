@@ -12,6 +12,7 @@ from os import getcwd, listdir
 import base64
 from time import sleep
 
+num_charms = 55
 
 def generate_charmlist_from_order(charm_order: list) -> list:
     charms = [vanilla_charm_order[charm_pos] for charm_pos in charm_order]
@@ -25,14 +26,14 @@ def generate_charm_orderlist(charms: list) -> list:
 
 def get_charmlist_from_b64(b64string: str) -> list:
     charm_config = int.from_bytes(base64.b64decode(b64string.encode()), "big")
-    charm_order = k_th_permutation(40, charm_config)
+    charm_order = k_th_permutation(num_charms, charm_config)
     return generate_charmlist_from_order(charm_order)
 
 
 def get_charm_order_b64(charmlist: list) -> str:
     charm_order = generate_charm_orderlist(charmlist)
     charmlist_id = permutation_index(charm_order)
-    return base64.b64encode(charmlist_id.to_bytes(20, "big")).decode()
+    return base64.b64encode(charmlist_id.to_bytes(31, "big")).decode()
 
 
 def generate_autosplits(charms: list):
@@ -63,13 +64,13 @@ class CharmWindow(tk.Canvas):
         self.red = self.create_rectangle(-5, -5, -4, -4, fill="#ff0000", width=0)
 
         self.greens = []
-        for i in range(40):
+        for i in range(num_charms):
             tk_id = self.create_rectangle(-5, -5, -4, -4, fill="#00ff00", width=0)
             self.greens.append(tk_id)
         self.current_greens = []
 
         self.drop_shadows = []
-        for i in range(40):
+        for i in range(num_charms):
             tk_id = self.create_oval(-5, -5, -4, -4, fill="#2a3694", outline="#131b56", width=2)
             self.drop_shadows.append(tk_id)
 
@@ -312,7 +313,7 @@ class CharmSelector(tk.Frame):
     to fetch options from the main(tk.Tk)-instance and call generate_charm_order() with"""
     def __init__(self, *args, logic_cfg=None, printout=True, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
-        self.c = CharmWindow(self, width=600, height=450, bg="#ffffff")
+        self.c = CharmWindow(self, width=600, height=650, bg="#ffffff")
         self.c.grid(row=2, column=0, columnspan=4)
         self.cwu = CharmWindowUpdater(self.c)
         self.genButton = tk.Button(self, text="generate Random Charm Order", command=self.start_thread_generate)

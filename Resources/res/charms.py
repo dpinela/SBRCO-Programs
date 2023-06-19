@@ -7,4 +7,4 @@ charms = ['gatheringswarm', 'waywardcompass', 'grubsong', 'stalwartshell',
           'fragilestrength', 'nailmastersglory', 'jonisblessing', 'shapeofunn',
           'hiveblood', 'dreamwielder', 'dashmaster', 'quickslash',
           'spelltwister', 'deepfocus', 'grubberflyselegy', 'kingsoul',
-          'sprintmaster', 'dreamshield', 'weaversong', 'grimmchild']
+          'sprintmaster', 'dreamshield', 'weaversong', 'grimmchild', 'bluemothwings', 'antigravityamulet', 'lemmsstrength', 'floristsblessing', 'snailslash', 'snailsoul', 'shamanamp', 'nitrocrystal', 'crystalmaster', 'disinfectantflask', 'millibellesblessing', 'greedsong', 'marissasaudience', 'chaosorb', 'vespasvengeance']
