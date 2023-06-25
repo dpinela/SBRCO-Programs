@@ -38,5 +38,20 @@ charms_splits = {
       "fragilestrength": "<Split>FragileStrength</Split>",
       "fragilegreed": "<Split>FragileGreed</Split>",
       "fragileheart": "<Split>FragileHeart</Split>",
-      "grubsong": "<Split>Grubsong</Split>"
+      "grubsong": "<Split>Grubsong</Split>",
+      "bluemothwings": "<Split>Manual</Split>",
+      "antigravityamulet": "<Split>Manual</Split>",
+      "lemmsstrength": "<Split>Manual</Split>",
+      "floristsblessing": "<Split>Manual</Split>",
+      "snailslash": "<Split>Manual</Split>",
+      "snailsoul": "<Split>Manual</Split>",
+      "shamanamp": "<Split>Manual</Split>",
+      "nitrocrystal": "<Split>Manual</Split>",
+      "crystalmaster": "<Split>Manual</Split>",
+      "disinfectantflask": "<Split>Manual</Split>",
+      "millibellesblessing": "<Split>Manual</Split>",
+      "greedsong": "<Split>Manual</Split>",
+      "marissasaudience": "<Split>Manual</Split>",
+      "chaosorb": "<Split>Manual</Split>",
+      "vespasvengeance": "<Split>Manual</Split>"
 }
