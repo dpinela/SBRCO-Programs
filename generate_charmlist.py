@@ -154,4 +154,4 @@ if __name__ == "__main__":
     print("\n", charmlist)
     charmlist_id = index(generate_charm_orderlist(charmlist))
     print("charmlist in base10:", charmlist_id)
-    print("charmlist in base64:", b64encode(charmlist_id.to_bytes(20, "big")).decode())
+    print("charmlist in base64:", b64encode(charmlist_id.to_bytes(31, "big")).decode())
