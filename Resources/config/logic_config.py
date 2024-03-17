@@ -3,7 +3,7 @@ config = {"easy": False, "medium": True, "hard": False,
           "earlyShaman": True, "earlyFlukes": True, "earlyDW": True, "earlyNMG": False,
           "earlyTwister": False, "diveTwister": False, "grubLegy": True, "QSlockNMG": False,
           "earlyDM": True, "fastPalace": False, "midGrubsong": False, "lateHB": False,
-          "comfLegy": False}
+          "comfLegy": False, "randowake": False}
 
 '''
 easy/medium/hard - choose exactly 1
@@ -24,4 +24,5 @@ fastPalace - Dashmaster and Sharp Shadow before Kingsoul
 midGrubsong - middle Grubsong
 lateHB - late Hiveblood
 comfLegy - Elegy requires 2 of Shaman/Twister/Flukes
+randowake - start timer on Rando Wake instead of enter King's Pass
 '''

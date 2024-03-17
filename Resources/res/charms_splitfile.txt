@@ -28,7 +28,7 @@
   <AutoSplitterSettings>
     <Ordered>True</Ordered>
     <AutosplitEndRuns>True</AutosplitEndRuns>
-    <AutosplitStartRuns></AutosplitStartRuns>
+    <AutosplitStartRuns>{autostart}</AutosplitStartRuns>
     <Splits>
       {autosplits}
       <Split>SalubrasBlessing</Split>

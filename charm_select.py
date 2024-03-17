@@ -36,7 +36,7 @@ def get_charm_order_b64(charmlist: list) -> str:
     return base64.b64encode(charmlist_id.to_bytes(31, "big")).decode()
 
 
-def generate_autosplits(charms: list):
+def generate_autosplits(charms: list, randowake: bool = False):
     with open("Resources/res/charms_splitfile.txt") as f:
         s = f.read()
     try:
@@ -49,6 +49,7 @@ def generate_autosplits(charms: list):
     lss = s.format(
         charmsplits="\n    ".join(
             charms_splits.charms_splits[charm] for charm in charms),
+        autostart=("RandoWake" if randowake else ""),
         autosplits="\n      ".join(
             charms_autosplits.charms_splits[charm] for charm in charms),
         layoutpath=f"<LayoutPath>{layoutpath}</LayoutPath>" if layoutpath else "")
@@ -428,7 +429,7 @@ class main(tk.Frame):
     def generate_lss(self):
         charm_order_b64 = get_charm_order_b64((self.config1, self.config2, self.config3)[self.config_i.get()].c.charmlist)
         self.get_charmlist(charm_order_b64)
-        lss = generate_autosplits(self.charmlist)
+        lss = generate_autosplits(self.charmlist, randowake=self.logic_options["randowake"])
         with open(f"sbrco.lss", "w") as f:
             f.write(lss)
         print("generated autosplits in ./sbrco.lss")
